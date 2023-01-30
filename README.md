@@ -1,3 +1,10 @@
+Compile inside Alpine Linux, pmOS
+=================
+    sudo apk add make gcc alpine-sdk linux-headers libpng-dev
+    export GCABI="goya"
+    cd attic
+    make
+
 Introduction
 =================
 
