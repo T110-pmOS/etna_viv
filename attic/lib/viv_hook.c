@@ -31,7 +31,7 @@
 #include "gc_hal_driver.h"
 
 #ifdef GCABI_HAS_STATE_DELTAS
-#include "gc_hal_kernel_buffer.h"
+#include "gc_hal_user_buffer.h"
 #else /* V2 */
 #include "gc_hal_user_context.h"
 #endif

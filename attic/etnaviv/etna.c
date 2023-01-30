@@ -313,8 +313,8 @@ int etna_create(struct viv_conn *conn, struct etna_ctx **ctx_out)
             return ETNA_INTERNAL_ERROR;
         }
 #ifdef DEBUG
-        fprintf(stderr, "Allocated buffer %i: phys=%08x log=%08x bytes=%08x [signal %i]\n", x,
-                (uint32_t)buf0_physical, (uint32_t)buf0_logical, buf0_bytes, ctx->cmdbufi[x].sig);
+        fprintf(stderr, "Allocated buffer %i: phys=%08x log=%08x bytes=%08x [signal %i]\n", x);
+                //(uint32_t)buf0_physical, (uint32_t)buf0_logical, buf0_bytes, ctx->cmdbufi[x].sig);
 #endif
     }
 
