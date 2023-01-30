@@ -1,9 +1,18 @@
 Compile inside Alpine Linux, pmOS
 =================
-    sudo apk add make gcc alpine-sdk linux-headers libpng-dev
+    sudo apk add make gcc alpine-sdk linux-headers libpng-dev mesa-dev
     export GCABI="goya"
     cd attic
     make
+    cd egl
+    make
+
+Running demos
+=================
+    sudo modprobe galcore
+    export DISPLAY=:0
+    cd ~/etna_viv/attic/fb
+    sudo ./etna_gears
 
 Introduction
 =================
